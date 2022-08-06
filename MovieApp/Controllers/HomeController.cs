@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MovieApp.Data;
 using MovieApp.Models;
 
 namespace MovieApp.Controllers
@@ -20,12 +21,17 @@ namespace MovieApp.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View(Repository.GetMovies());
+            return View(MovieRepository.GetMovies());
         }
 
         public IActionResult Contact()
         {
             return View();
+        }
+
+        public IActionResult Details(int id)
+        {
+            return View(MovieRepository.GetMovieById(id));
         }
         public IActionResult Privacy()
         {
