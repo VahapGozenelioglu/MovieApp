@@ -20,7 +20,7 @@ namespace MovieApp.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            return View(Repository.GetMovies());
         }
 
         public IActionResult Contact()
