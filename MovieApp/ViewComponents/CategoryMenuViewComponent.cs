@@ -7,6 +7,11 @@ namespace MovieApp.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
+            if(RouteData?.Values["action"]?.ToString() == "Index")
+            {
+                ViewBag.SelectedCategory = RouteData?.Values["id"];
+            }
+            
             return View(CategoryRepository.GetCategories());
         }
     }
