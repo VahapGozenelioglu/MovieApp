@@ -19,9 +19,14 @@ namespace MovieApp.Controllers
             _logger = logger;
         }
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
-            return View(MovieRepository.GetMovies());
+            var movies = MovieRepository.GetMovies();
+            if (id != null)
+            {
+                movies = movies.Where(i => i.CategoryId == id).ToList();
+            }
+            return View(movies);
         }
 
         public IActionResult Contact()
