@@ -8,4 +8,8 @@
       <Folder Include="wwwroot\img" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\CategoryMenu\default.cshtml" />
+    </ItemGroup>
+
 </Project>

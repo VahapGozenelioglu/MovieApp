@@ -21,10 +21,7 @@ namespace MovieApp.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            MovieCategoryAssoc movieCategoryAssoc = new MovieCategoryAssoc();
-            movieCategoryAssoc.Movies = MovieRepository.GetMovies();
-            movieCategoryAssoc.Categories = CategoryRepository.GetCategories();
-            return View(movieCategoryAssoc);
+            return View(MovieRepository.GetMovies());
         }
 
         public IActionResult Contact()
@@ -34,10 +31,7 @@ namespace MovieApp.Controllers
 
         public IActionResult Details(int id)
         {
-            MovieCategoryAssoc movieCategoryAssoc = new MovieCategoryAssoc();
-            movieCategoryAssoc.Categories = CategoryRepository.GetCategories();
-            movieCategoryAssoc.Movie = MovieRepository.GetMovieById(id);
-            return View(movieCategoryAssoc);
+            return View(MovieRepository.GetMovieById(id));
         }
         public IActionResult Privacy()
         {
