@@ -23,7 +23,6 @@ C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Create.cshtml.g.cs
-C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Details.cshtml.g.cs
 C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Index.cshtml.g.cs
 C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\Views\Movie\List.cshtml.g.cs
 C:\Users\user\RiderProjects\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
